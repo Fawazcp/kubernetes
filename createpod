@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podapp
+  labels:
+    app: podapp
+spec:
+  containers:
+    - name: appcontainer
+      image: fawazcp/firstimg
+      ports:
+        - name: podapp-port
+          containerPort: 8080
