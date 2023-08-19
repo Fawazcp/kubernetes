@@ -8,6 +8,6 @@ spec:
     nodePort: 30001
     targetPort: 8080
     protocol: tcp
-  selecter:
+  selector:
       app: podapp
   type: NodePort
