@@ -4,10 +4,10 @@ metadata:
   name: helloworld-service
 spec:
   ports:
-    - port: 8090
-      nodePort: 30001
-      targetPort: 8080
-      protocol: tcp
-    selecter:
+  - port: 8090
+    nodePort: 30001
+    targetPort: 8080
+    protocol: tcp
+  selecter:
       app: podapp
-    type: NodePort
+  type: NodePort
